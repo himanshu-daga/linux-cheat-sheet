@@ -1,0 +1,52 @@
+touch filename.txt -- create new file
+cd, ls, ., .. -- change directory, list all in current folder, current directory, previous directory
+pwd -- present working directory
+passwd -- to change user password
+
+------------------------------------------------
+less- load file pg by pg, so fast 
+head, tail- see top few or bottom few
+curl- load a url in terminal, many eatures supported like ftp, smtp,...
+wget- download a url, SPECIAL- download recursively
+apt- commnd line tool to interact with dpkg packages
+bashrc- set of commands executed whenever a new shell/terminal started
+ssh- secure shell, encrypted data transfer
+
+------------------------------------------------
+bg/fg %n- get a program run in background/foreground
+command ke baad me & -- bg me chalane ke liye
+C-z -- stop a process
+jobs-- list jobs
+fg %n
+
+------------------------------------------------
+pipes |, redirection >,>>,< ,SPECIAL CHARACTERS:
+echo "File Name: $0"
+echo "First Parameter : $1"
+echo "Second Parameter : $2"
+echo "Quoted Values all: $@"
+echo "Quoted Values individually: $*"
+echo "Total Number of Parameters : $#"
+
+------------------------------------------------
+
+TMUX
+https://www.hamvocke.com/blog/a-quick-and-easy-guide-to-tmux/
+
+C-b --> code mode
+:% split horizontally
+:" split vertically
+C-d --> close the active pane
+: arrows --> switch between panes and hold the C-b to change dimensions of the current pane
+: c --> new window
+: p,n --> previous, next window
+: d, D --> detach current session, list and detach session
+: z --> full screen
+: ? --> list all commands
+
+tmux ls
+tmux attach -t 0,1,..
+tmux new -s sessName
+tmux rename-session -t 21 sessName
+
+------------------------------------------------
